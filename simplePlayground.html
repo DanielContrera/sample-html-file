@@ -47,7 +47,18 @@
             padding: 20px;
             border-bottom: 1px dotted grey;
         }
-    </style>
+        li.done {
+                    background-color:#ccc;
+                    text-decoration:line-through;
+                }
+        ul>li {
+            margin:0px;
+            }
+        ul>li {
+            padding:0px;
+        }
+
+            </style>
 </head>
 
 <body>
@@ -96,6 +107,7 @@
 
     <!-- This section is for List examples -->
     <section>
+        
         <h1>List</h1>
         <h3>Calls procedure checklist</h3>
         <ol>
@@ -113,11 +125,11 @@
             </li>
         </ol>
         <h3>TO DO List</h3>
+        
         <ul>
-            <li><s>Call Mom</s></li>
-            <li><s>Buy tickets</s></li>
-            <li>
-                Do homework
+            <li class="done">Call Mom</li>
+            <li class="done">Buy tickets</li>
+            <li>Do homework
                 <ul>
                     <li>English exercises</li>
                     <li>FED exercises</li>
